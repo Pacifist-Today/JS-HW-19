@@ -1,4 +1,4 @@
-function mainFunction () {
+function mainFunction (exponentiation, multiply, division, module) {
     let num = +prompt("Введите число")
     let pow = +prompt("Введите степень")
     if (isNaN(num) || isNaN(pow)) {
@@ -24,7 +24,7 @@ function multiply (num, pow) {
 
 function division (num, pow) {
     let result = num / pow
-    console.log("Результат деления равен " + result)
+    console.log("Результат деления равен " + result.toFixed(2))
 }
 
 function module (num, pow) {
@@ -32,5 +32,4 @@ function module (num, pow) {
     console.log("Результат деления с остатком равен " + result)
 }
 
-mainFunction()
-// mainFunction(exponentiation(), multiply(), division(), module())
+mainFunction(exponentiation, multiply, division, module)
